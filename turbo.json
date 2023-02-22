@@ -1,0 +1,23 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"],
+      "inputs": ["src/**"]
+    },
+    "start": {
+      "inputs": [
+        "src/**",
+        "*.yml"
+      ]
+    },
+    "test": {
+      "inputs": [
+        "src/**/*.example.ts",
+        "src/**/*.test.ts"
+      ]
+    }
+  }
+}

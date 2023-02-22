@@ -1,0 +1,31 @@
+{
+  "name": "my-turborepo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@types/npmlog": "^4.1.4",
+    "ava": "^5.2.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "npm@9.4.2",
+  "dependencies": {
+    "npmlog": "^7.0.1"
+  }
+}
