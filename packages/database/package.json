@@ -1,10 +1,13 @@
 {
-    "name": "tool",
+    "name": "database",
     "type": "module",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
             "import": "./dist/index.js"
+        },
+        "./entities/*": {
+            "import": "./dist/entities/*"
         }
     },
     "scripts": {
@@ -15,6 +18,7 @@
         "test": "ava"
     },
     "dependencies": {
-        "config": "file:../config"
+        "config": "file:../config",
+        "tool": "file:../tool"
     }
 }

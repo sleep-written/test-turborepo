@@ -1,1 +1,1 @@
-export { greeting } from './greeting.js';
+export { currentPath } from './current-path.js';

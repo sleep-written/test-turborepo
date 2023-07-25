@@ -32,6 +32,9 @@ yarn-error.log*
 # turbo
 .turbo
 
+# configuration files
+/*config.yml
+
 # compiled
 packages/*/dist
 apps/*/dist
